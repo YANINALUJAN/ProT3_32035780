@@ -10,9 +10,9 @@ if (!empty($_POST["usuario"]) && !empty($_POST["pass" ])) {
     $stm->bindParam(" :pass", $pass);
 
     if ($stmt->execute()){
-        $message = "Succssfully Created new user";
+        $message = "Se ha logueado correctamente";
     } else {
-        $message = "Sorry there must have been an issue creating your account";
+        $message = "Error en la contraseña o usuario";
     }
 }
 ?>
